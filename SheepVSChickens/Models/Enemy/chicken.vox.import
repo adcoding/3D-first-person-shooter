@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/chicken.vox-46a16a4433c065d8da839fbd488d3be1.mesh"
+
+[deps]
+
+source_file="res://Models/Enemy/chicken.vox"
+dest_files=[ "res://.import/chicken.vox-46a16a4433c065d8da839fbd488d3be1.mesh" ]
+
+[params]
+

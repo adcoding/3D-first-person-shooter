@@ -1,0 +1,13 @@
+[remap]
+
+importer="MagicaVoxel-Importer"
+type="Mesh"
+path="res://.import/sheep.vox-0088e5f86348536fe14bceb973ff3406.mesh"
+
+[deps]
+
+source_file="res://sheep.vox"
+dest_files=[ "res://.import/sheep.vox-0088e5f86348536fe14bceb973ff3406.mesh" ]
+
+[params]
+

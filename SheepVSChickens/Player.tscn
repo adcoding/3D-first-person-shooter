@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://default_env.tres" type="Environment" id=1]
+[ext_resource path="res://sheep.vox" type="ArrayMesh" id=2]
+[ext_resource path="res://Player.gd" type="Script" id=3]
+[ext_resource path="res://Sounds/sheep.wav" type="AudioStream" id=4]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.5
+height = 1.5
+
+[node name="Player" type="KinematicBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0950789, 0 )
+script = ExtResource( 3 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 1.25, 0 )
+shape = SubResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.190006, 1.3401, -0.00656721 )
+cull_mask = 2148532223
+environment = ExtResource( 1 )
+current = true
+
+[node name="GunModel" type="MeshInstance" parent="Camera"]
+transform = Transform( 0.0350634, 0.0106258, -0.0160515, -0.00971261, 0.0385627, 0.00431119, 0.01662, 0.000118433, 0.0363836, 0.317609, -0.410496, -0.556885 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="Muzzle" type="Spatial" parent="Camera/GunModel"]
+transform = Transform( 0.789324, 0.120371, -0.602064, 0.0155558, -0.984201, -0.176377, -0.613781, 0.129853, -0.778725, -8.03372, 5.40294, -10.5868 )
+
+[node name="SheepSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )

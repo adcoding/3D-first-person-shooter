@@ -1,0 +1,56 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://UI/UI_Square.png" type="Texture" id=1]
+[ext_resource path="res://Font/new_dynamicfont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://UI.gd" type="Script" id=3]
+
+[node name="UI" type="Control"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HealthBar" type="TextureProgress" parent="."]
+anchor_top = 14.487
+anchor_bottom = 14.487
+margin_left = 44.0
+margin_top = -50.48
+margin_right = 198.0
+margin_bottom = -21.48
+value = 50.0
+texture_under = ExtResource( 1 )
+texture_progress = ExtResource( 1 )
+tint_under = Color( 0.223529, 0.223529, 0.223529, 1 )
+tint_progress = Color( 0.254902, 0.552941, 0.505882, 1 )
+nine_patch_stretch = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AmmoText" type="Label" parent="."]
+anchor_top = 14.062
+anchor_bottom = 14.062
+margin_left = 45.6781
+margin_top = -84.1642
+margin_right = 176.678
+margin_bottom = -50.1642
+custom_fonts/font = ExtResource( 2 )
+text = "Ammo: 50"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ScoreText" type="Label" parent="."]
+anchor_top = 14.062
+anchor_bottom = 14.062
+margin_left = 46.9832
+margin_top = -122.664
+margin_right = 184.983
+margin_bottom = -88.6644
+custom_fonts/font = ExtResource( 2 )
+text = "Score: 500"
+__meta__ = {
+"_edit_use_anchors_": false
+}
